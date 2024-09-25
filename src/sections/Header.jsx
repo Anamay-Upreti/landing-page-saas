@@ -9,6 +9,7 @@ const NavLink = ({ title }) => {
 };
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(initialstate = false);
   return (
     <header className="fixed top-0 left-0 w-full py-10 z-50">
       <div className="container flex h-14 items-center max-lg:px-5">
@@ -17,6 +18,9 @@ const Header = () => {
 
         {/* Image */}
         <img src="/images/xora.svg" alt="logo" width={115} height={55} />
+
+
+          <div className="w-full max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:w-full max-lg:bg-s2 max-lg:opacity-0"></div>
 
         {/* Navigation */}
         <div className=" max-lg:relative max-lg:flex-col max-lg:min-h-screen max-lg:p-6 max-lg:overflow-hidden sidebar-before max-md:px-4">
@@ -49,6 +53,9 @@ const Header = () => {
           </nav>
         </div>
       </div>
+      <button className="lg:hidden z-2 size-10 border-2 border-s4/25 rounded-full flex justify-center items-center" onClick={() => setIsOpen(!isOpen)}>
+         <img src="/images/magic.svg" alt="magic" />
+      </button>
     </header>
   );
 };
