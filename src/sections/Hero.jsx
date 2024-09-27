@@ -1,5 +1,6 @@
 import React from 'react'
 import { Element, Link as LinkScroll } from 'react-scroll'
+import Button from '../components/Button'
 const Hero = () => {
   return (
    <section className='relative pt-60 pb-40 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 max-md:pb-32 '>
@@ -13,7 +14,9 @@ const Hero = () => {
                     Amazingly Simple
                 </h1>
                 <p className='max-w-440 mb-14 body-1 max-md:mb-10'>We Designed XORA I Video editior to be an easy to use, quick to learn, and incredibly powerful.</p>
-                <LinkScroll to='features' offset={-100} spy smooth></LinkScroll>
+                <LinkScroll to='features' offset={-100} spy smooth>
+                <Button icon="/images.zap.svg">Try it now!</Button>
+                </LinkScroll>
             </div>
         </div>
      </Element>
