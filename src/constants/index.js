@@ -1,7 +1,7 @@
-const features = [
+export const features = [
     {
         id: '0',
-        icon: '/images/feature-1.svg',
+        icon: "/images/feature-1.png",
         caption: 'Easy to use',
         title: 'Feature 1',
         text: 'TET1',
@@ -12,7 +12,7 @@ const features = [
     },
     {
         id: '1',
-        icon: '/images/feature-2.svg',
+        icon: '/images/feature-2.png',
         caption: 'Easy to use',
         title: 'Feature 2',
         text: 'TET2',
